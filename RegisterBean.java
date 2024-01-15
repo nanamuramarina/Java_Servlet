@@ -19,7 +19,7 @@ public class RegisterBean implements Serializable {
   public void setLangs(String[] langs){
     this.langs = langs;
   }
-  
+
   public String getName(){
     return name;
   }
@@ -29,9 +29,19 @@ public class RegisterBean implements Serializable {
   public String getLangs(){
     return langs;
   }
-  
+
+  public String getJpnAge(){
+    String JpnAge;
+    if (age.equals("child")){
+      jpnAge="１８歳未満"
+    }else{
+      jpnAge="１８歳以上"
+    }
+  }
+
   public String getJpnAge(){
     String strLangs = "";
     for (int i = 0;)
   }
+  return strLangs
 }
